@@ -1,6 +1,6 @@
 # NDI Sender — broadcast the desktop as NDI on the LAN.
 #
-# Shells out to `zentoo-ndi-cast` (the helper that owns the portal handshake
+# Shells out to `ndi-cast` (the helper that owns the portal handshake
 # + gst pipeline). The Luau side is pure orchestration: state machine in the
 # headless [[service]], thin presentation in the [[widget]] and [[shortcut]].
 #

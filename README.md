@@ -6,7 +6,7 @@
 
 | Plugin | Purpose | Requires |
 | --- | --- | --- |
-| `zentoo/ndi_sender` | Bar tile + control-center shortcut to broadcast the desktop as an NDI source on the LAN | `app-misc/zentoo-ndi-cast` (zentoo overlay) |
+| `zentoo/ndi_sender` | Bar tile + control-center shortcut to broadcast the desktop as an NDI source on the LAN | `app-misc/ndi-cast` (gentoo-overlay) |
 
 ## Install
 

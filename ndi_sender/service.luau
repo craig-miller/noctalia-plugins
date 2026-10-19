@@ -7,8 +7,8 @@ noctalia.setUpdateInterval(250)
 local CHECK_TICKS = 8        -- 8 * 250ms = 2s between process probes
 local PENDING_GRACE_TICKS = 64  -- ~16s grace for portal popup + gst startup
 
-local HELPER_PATH = "zentoo-ndi-cast"
-local PID_PATH = "~/.local/state/zentoo-ndi-cast.pid"
+local HELPER_PATH = "ndi-cast"
+local PID_PATH = "~/.local/state/ndi-cast.pid"
 
 local state = "idle"        -- idle | pending | streaming
 local isAvailable = false
@@ -46,7 +46,7 @@ local function buildStartCommand()
 end
 
 local function checkAvailability()
-    return noctalia.commandExists("zentoo-ndi-cast") and noctalia.commandExists("gst-launch-1.0")
+    return noctalia.commandExists(HELPER_PATH) and noctalia.commandExists("gst-launch-1.0")
 end
 
 local function detectProcessStateAsync(callback)
@@ -75,7 +75,7 @@ local function startStream()
     local cmd = buildStartCommand()
     if not noctalia.runAsync(cmd) then
         setState("idle")
-        noctalia.notifyError("NDI sender failed", "Could not launch zentoo-ndi-cast")
+        noctalia.notifyError("NDI sender failed", "Could not launch ndi-cast")
         updateDisplay()
         return
     end
