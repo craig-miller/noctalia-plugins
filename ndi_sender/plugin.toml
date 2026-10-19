@@ -6,11 +6,12 @@
 #
 # Click mapping (widget + shortcut): left = toggle stream.
 
-id = "zentoo/ndi_sender"
+id = "craig-miller/ndi_sender"
 name = "NDI Sender"
 version = "0.1.0"
+plugin_api = 9
 min_noctalia = "5.0.0"
-author = "zentoo"
+author = "Craig Miller"
 license = "MIT"
 tags = ["video", "ndi", "screencast"]
 icon = "video"

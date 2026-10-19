@@ -3,10 +3,11 @@
 # host re-reads it on enable. Keep one [[plugin]] row per plugin subdirectory.
 
 [[plugin]]
-id = "zentoo/ndi_sender"
+id = "craig-miller/ndi_sender"
 name = "NDI Sender"
 version = "0.1.0"
-author = "zentoo"
+plugin_api = 9
+author = "Craig Miller"
 license = "MIT"
 icon = "video"
 description = "Broadcast the desktop as NDI on the LAN."
