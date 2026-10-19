@@ -1,0 +1,19 @@
+id = "craig-miller/next_event"
+name = "Next Event"
+version = "0.2.0"
+plugin_api = 24
+min_noctalia = "5.0.1"
+author = "Craig Miller"
+license = "MIT"
+tags = ["calendar", "pim", "vdir", "khal"]
+icon = "calendar-event"
+description = "Show the next timed event from Noctalia's configured vdir calendars."
+dependencies = ["khal"]
+
+[[service]]
+id = "service"
+entry = "service.luau"
+
+[[widget]]
+id = "next"
+entry = "widget.luau"

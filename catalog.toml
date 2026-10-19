@@ -13,3 +13,15 @@ icon = "video"
 description = "Broadcast the desktop as NDI on the LAN."
 min_noctalia = "5.0.0"
 tags = ["video", "ndi", "screencast"]
+
+[[plugin]]
+id = "craig-miller/next_event"
+name = "Next Event"
+version = "0.2.0"
+plugin_api = 24
+author = "Craig Miller"
+license = "MIT"
+icon = "calendar-event"
+description = "Show the next timed event from Noctalia's configured vdir calendars."
+min_noctalia = "5.0.1"
+tags = ["calendar", "pim", "vdir", "khal"]
